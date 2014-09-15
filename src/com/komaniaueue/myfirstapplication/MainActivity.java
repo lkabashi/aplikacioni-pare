@@ -48,6 +48,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			intent.putExtra("Email", edtEmail.getText().toString());
 			startActivity(intent);
 		} else if (v == btnTest) {
+            // komenti
 			Intent callIntent = new Intent(Intent.ACTION_CALL, 
 										  Uri.parse("tel:049123123"));			
 			Intent mapIntent = new Intent(Intent.ACTION_VIEW, 
@@ -57,6 +58,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			Intent youTubeIntent = new Intent(Intent.ACTION_VIEW, 
 				      						 Uri.parse("https://www.youtube.com/watch?v=Z4PKrVDg09s"));
 			
+            // fort qart
 			Intent smsIntent = new Intent(Intent.ACTION_VIEW);
 			smsIntent.setData(Uri.parse("sms:"));
 			smsIntent.putExtra("sms_body", "test");
