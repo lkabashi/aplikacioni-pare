@@ -23,7 +23,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_activity_layout);
-		
+	
+        // komenti
 		btnRegjistro = (Button) findViewById(R.id.btnRegjistro);
 		btnTest = (Button) findViewById(R.id.btnTest);
 		edtFirstName = (EditText) findViewById(R.id.edtFirstName);
@@ -38,6 +39,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	@Override
 	public void onClick(View v) {
 		if (v == btnRegjistro) {
+            // edhe 1 koment
 			Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
 			intent.putExtra("FirstName", edtFirstName.getText().toString());
 			intent.putExtra("LastName", edtLastname.getText().toString());
